@@ -26,11 +26,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         RecyclerView recyclerView = findViewById(R.id.rvItemsList);
 
-        DatabaseHelper databaseHelper = DatabaseHelper.getDB(this);
-        databaseHelper.expenseDao().addTx(
-                new Expense()
-
-        );
 
         FileReader fileReader = new FileReader(MainActivity.this);
 //        List<Model> list = fileReader.getEmployeeList();
